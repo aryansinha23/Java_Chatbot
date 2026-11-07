@@ -28,3 +28,4 @@ exit /b 1
 echo Starting GUI: %JAR_PATH%
 start javaw -jar "%JAR_PATH%" --gui
 endlocal
+

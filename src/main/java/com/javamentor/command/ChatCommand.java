@@ -23,3 +23,4 @@ public interface ChatCommand {
      */
     boolean execute(CommandContext context);
 }
+

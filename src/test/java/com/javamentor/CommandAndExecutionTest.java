@@ -89,3 +89,4 @@ public class InvalidSyntaxClass {
         assertFalse(result.getCompilerErrors().isBlank(), "Compiler errors must be reported");
     }
 }
+
