@@ -51,3 +51,4 @@ public class GeminiClientTest {
         assertTrue(url.contains("key=test-key-12345"), "URL must attach API key param");
     }
 }
+

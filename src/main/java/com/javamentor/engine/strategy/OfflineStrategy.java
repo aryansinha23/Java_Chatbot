@@ -37,3 +37,4 @@ public class OfflineStrategy implements ResponseStrategy {
         return true;
     }
 }
+

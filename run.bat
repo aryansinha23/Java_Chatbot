@@ -28,3 +28,4 @@ exit /b 1
 echo Launching: %JAR_PATH%
 java -jar "%JAR_PATH%" %*
 endlocal
+

@@ -90,3 +90,4 @@ public class GeminiConfig {
         return BASE_URL + model + ":generateContent?key=" + apiKey;
     }
 }
+

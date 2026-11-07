@@ -45,3 +45,4 @@ public class KnowledgeRepository {
         return Collections.unmodifiableList(topics);
     }
 }
+

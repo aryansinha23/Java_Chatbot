@@ -26,3 +26,4 @@ public interface ResponseStrategy {
      */
     boolean isAvailable();
 }
+

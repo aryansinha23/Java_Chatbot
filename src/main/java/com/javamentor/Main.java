@@ -22,6 +22,11 @@ public class Main {
                 return;
             }
 
+            if ("--gui".equalsIgnoreCase(arg) || "-g".equalsIgnoreCase(arg)) {
+                com.javamentor.ui.gui.MentorGui.launch(engine);
+                return;
+            }
+
             if ("--mode".equalsIgnoreCase(arg) && i + 1 < args.length) {
                 String modeStr = args[++i].toUpperCase();
                 try {
@@ -71,8 +76,9 @@ public class Main {
     }
 
     private static void printCliUsage() {
-        System.out.println("Java Concept & Code Mentor - CLI Usage:");
-        System.out.println("  java -jar java-concept-mentor.jar                 # Interactive mode");
+        System.out.println("Java Concept & Code Mentor - Usage Options:");
+        System.out.println("  java -jar java-concept-mentor.jar                 # Interactive Terminal CLI");
+        System.out.println("  java -jar java-concept-mentor.jar --gui           # Desktop Graphical UI (Swing)");
         System.out.println("  java -jar java-concept-mentor.jar --mode OFFLINE  # Force offline knowledge engine");
         System.out.println("  java -jar java-concept-mentor.jar --mode ONLINE   # Force Google Gemini engine");
         System.out.println("  java -jar java-concept-mentor.jar --benchmark 5   # Run autonomous training benchmark");

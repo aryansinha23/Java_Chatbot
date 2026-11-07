@@ -149,11 +149,17 @@ mvn clean package
 
 ### Step 4: Run the Application
 
-* **Interactive Terminal Mode**:
+* **Interactive Terminal CLI**:
   ```bash
   java -jar target/java-concept-mentor-1.0.0.jar
   ```
   *(Or double-click `run.bat` on Windows)*
+
+* **Desktop Graphical User Interface (Swing GUI)**:
+  ```bash
+  java -jar target/java-concept-mentor-1.0.0.jar --gui
+  ```
+  *(Or double-click `gui.bat` on Windows)*
 
 * **Force Specific Engine Mode**:
   ```bash
@@ -176,9 +182,9 @@ mvn clean package
 
 ---
 
-## 6. Interactive CLI Commands
+## 6. Interactive Commands Reference
 
-Inside the interactive session (`JavaMentor > `), the following commands are available:
+Commands can be invoked in the terminal (`JavaMentor > `) adhering to the GOF Command Pattern:
 
 | Command | Action |
 | :--- | :--- |
@@ -186,6 +192,7 @@ Inside the interactive session (`JavaMentor > `), the following commands are ava
 | `/mode [auto\|online\|offline]` | Switches between Google Gemini and the Offline Pattern Engine. |
 | `/benchmark [count]` | Triggers the Synthetic Student Agent to test and train the Mentor. |
 | `/audit [on\|off]` | Toggles real-time display of the AI Critic 100-mark rubric audit card. |
+| `/run` | Compiles and executes the Phase 3 Java code live using the dynamic execution harness. |
 | `/history` | Displays current session queries and their audit scores. |
 | `/export [filename.md]` | Exports the complete interactive session transcript to Markdown. |
 | `/clear` | Clears the terminal screen and reprints the banner. |
@@ -333,3 +340,4 @@ Autonomous Auditor AI Agent Inspection:
 ## 9. License
 
 This project is licensed under the MIT License. See `LICENSE` for details.
+

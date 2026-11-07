@@ -32,3 +32,4 @@ jobs:
       run: |
         ls -la target/*.jar
         echo "Fat-JAR built successfully!"
+

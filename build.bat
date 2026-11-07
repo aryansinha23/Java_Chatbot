@@ -23,3 +23,4 @@ if %ERRORLEVEL% equ 0 (
     echo [ERROR] Build failed. Check compiler output above.
 )
 endlocal
+

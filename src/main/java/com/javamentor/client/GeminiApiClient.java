@@ -234,3 +234,4 @@ public class GeminiApiClient {
         return body.length() > 300 ? body.substring(0, 300) + "..." : body;
     }
 }
+
